@@ -1,0 +1,90 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-fondo-alt: #f6f7fb;
+  --color-texto: #1f2333;
+  --color-texto-suave: #565b6e;
+  --color-primario: #5b5bf0;
+  --color-primario-oscuro: #4444d1;
+  --color-oscuro: #14162a;
+  --color-borde: #e4e5f0;
+
+  --fuente-titulos: "Poppins", sans-serif;
+  --fuente-texto: "Inter", sans-serif;
+
+  --radio: 14px;
+  --sombra: 0 10px 30px rgba(20, 22, 42, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-texto);
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Botones reutilizados en varias secciones */
+.boton {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+}
+
+.boton--primario {
+  background: var(--color-primario);
+  color: #fff;
+}
+
+.boton--primario:hover {
+  background: var(--color-primario-oscuro);
+}
+
+.boton--secundario {
+  background: transparent;
+  border-color: var(--color-primario);
+  color: var(--color-primario);
+}
+
+.boton--texto {
+  background: none;
+  border: none;
+  color: var(--color-primario);
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
